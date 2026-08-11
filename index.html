@@ -1,13 +1,18 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bebecitos Boutique</title>
+
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Fuente Montserrat de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -86,75 +91,170 @@
             font-weight: 600;
             font-size: 15px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         }
 
         .btn-link:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .btn-link i {
             font-size: 22px;
         }
 
-        /* Estilos de botones */
+        /* Botón Catálogo */
         .catalog {
             background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
             color: white;
         }
 
-        .whatsapp { background-color: #25D366; color: white; }
-        .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
-        .tiktok { background-color: #000000; color: white; }
-        .facebook { background-color: #1877F2; color: white; }
+        /* Botón WhatsApp */
+        .whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
 
+        /* Botón Instagram */
+        .instagram {
+            background: linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+            );
+            color: white;
+        }
+
+        /* Botón TikTok */
+        .tiktok {
+            background-color: #000000;
+            color: white;
+        }
+
+        /* Botón Facebook */
+        .facebook {
+            background-color: #1877F2;
+            color: white;
+        }
+
+        /* Pie de página */
         .footer {
             margin-top: 25px;
-            font-size: 12px;
+            font-size: 11px;
             color: #b59b5c;
             font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .footer p:first-child {
+            margin-bottom: 3px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 30px 20px;
+                border-radius: 24px;
+            }
+
+            .logo-container {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .btn-link {
+                padding: 14px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="card">
+
+        <!-- LOGO -->
         <div class="logo-container">
             <img src="img/logo.png" alt="Bebecitos Boutique Logo">
         </div>
 
+        <!-- NOMBRE DE LA EMPRESA -->
         <h1>Bebecitos Boutique</h1>
+
+        <!-- ESLOGAN -->
         <p class="slogan">El amor que crece contigo ✨</p>
 
+        <!-- BOTONES -->
         <div class="links-container">
-            <!-- Botón del Catálogo PDF -->
+
+            <!-- CATÁLOGO PDF -->
             <a href="catalogo.pdf" target="_blank" class="btn-link catalog">
-                <i class="fa-solid fa-file-pdf"></i> Ver Catálogo de Productos
+                <i class="fa-solid fa-file-pdf"></i>
+                Ver Catálogo de Productos
             </a>
 
-            <!-- Redes y Contacto -->
-            <a href="https://wa.me/573332508679?text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20Bebecitos%20Boutique" target="_blank" class="btn-link whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Escríbenos a WhatsApp
+            <!-- WHATSAPP -->
+            <a
+                href="https://wa.me/573332508679?text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20Bebecitos%20Boutique"
+                target="_blank"
+                class="btn-link whatsapp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Escríbenos a WhatsApp
             </a>
 
-            <a href="https://www.instagram.com/bebecitos_boutique_vup?utm_source=qr" target="_blank" class="btn-link instagram">
-                <i class="fa-brands fa-instagram"></i> Síguenos en Instagram
+            <!-- INSTAGRAM -->
+            <a
+                href="https://www.instagram.com/bebecitos_boutique_vup?utm_source=qr"
+                target="_blank"
+                class="btn-link instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+                Síguenos en Instagram
             </a>
 
-            <a href="https://www.tiktok.com/@kflaking?_r=1&_t=ZS-98ft6HFg1R6" target="_blank" class="btn-link tiktok">
-                <i class="fa-brands fa-tiktok"></i> Ver vídeos en TikTok
+            <!-- TIKTOK -->
+            <a
+                href="https://www.tiktok.com/@kflaking?_r=1&_t=ZS-98ft6HFg1R6"
+                target="_blank"
+                class="btn-link tiktok"
+            >
+                <i class="fa-brands fa-tiktok"></i>
+                Ver vídeos en TikTok
             </a>
 
-            <a href="https://www.facebook.com/share/1M4Adb91Ag/?mibextid=wwXIfr" target="_blank" class="btn-link facebook">
-                <i class="fa-brands fa-facebook"></i> Visita nuestro Facebook
+            <!-- FACEBOOK -->
+            <a
+                href="https://www.facebook.com/share/1M4Adb91Ag/?mibextid=wwXIfr"
+                target="_blank"
+                class="btn-link facebook"
+            >
+                <i class="fa-brands fa-facebook"></i>
+                Visita nuestro Facebook
             </a>
+
         </div>
 
+        <!-- DERECHOS DE AUTOR -->
         <div class="footer">
-            <p>© Bebecitos Boutique - Valledupar</p>
+            <p>© 2026 Bebecitos Boutique - Valledupar, Cesar</p>
+            <p>Todos los derechos reservados.</p>
         </div>
+
     </div>
 
 </body>
 </html>
+```
